@@ -1,0 +1,20 @@
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\obj\Debug\AvalExt Backoffice.csprojAssemblyReference.cache
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\obj\Debug\AvalExt_Backoffice.Properties.Resources.resources
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\obj\Debug\AvalExt Backoffice.csproj.GenerateResource.cache
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\obj\Debug\AvalExt Backoffice.csproj.CoreCompileInputs.cache
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\bin\Debug\AvalExt Backoffice.exe.config
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\bin\Debug\AvalExt Backoffice.exe
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\bin\Debug\AvalExt Backoffice.pdb
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\obj\Debug\AvalExt Backoffice.exe
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\obj\Debug\AvalExt Backoffice.pdb
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\obj\Debug\AvalExt_Backoffice.Dashboard.resources
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\obj\Debug\AvalExt_Backoffice.Form_Login.resources
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\obj\Debug\AvalExt_Backoffice.Form_Criar_Al.resources
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\obj\Debug\AvalExt_Backoffice.Form_Criar_Func.resources
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\obj\Debug\AvalExt_Backoffice.Form_Criar_Prof.resources
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\obj\Debug\AvalExt_Backoffice.Form_Edit_Prof.resources
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\obj\Debug\AvalExt_Backoffice.Form_Edit_Al.resources
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\obj\Debug\AvalExt_Backoffice.Form_Edit_Func.resources
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\obj\Debug\AvalExt_Backoffice.Form_Eliminar_Utilizador.resources
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\obj\Debug\AvalExt_Backoffice.Form_Criar_Pedido.resources
+C:\Users\Raul\Desktop\ProjetoFinal\Desktop\AvalExt Backoffice\obj\Debug\AvalExt_Backoffice.Form_Editar_Eliminar_Pedido.resources

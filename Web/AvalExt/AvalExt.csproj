@@ -1,0 +1,317 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28676DBB-1B04-47AA-BD0A-44989D3413FF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AvalExt</RootNamespace>
+    <AssemblyName>AvalExt</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44345</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AprovPedido_Func.aspx" />
+    <Content Include="AprovPedido_Prof.aspx" />
+    <Content Include="AtriPrecoPedidos_Func.aspx" />
+    <Content Include="AvalPedidos_Prof.aspx" />
+    <Content Include="css\morioh.css" />
+    <Content Include="css\morioh.min.css" />
+    <Content Include="Form_Cancelar_PedidoFunc.aspx" />
+    <Content Include="Form_ConsultarAl.aspx" />
+    <Content Include="Form_ConsultarFunc.aspx" />
+    <Content Include="Form_ConsultarProf.aspx" />
+    <Content Include="Form_Edit_Prof.aspx" />
+    <Content Include="Form_Func_Dashboard.aspx" />
+    <Content Include="Form_Passar_Func.aspx" />
+    <Content Include="Form_Passar_Prof.aspx" />
+    <Content Include="Form_Prof_Dashboard.aspx" />
+    <Content Include="Form_AL_Dashboard.aspx" />
+    <Content Include="Form_Cancelar_PedidoAl.aspx" />
+    <Content Include="Form_PedirAl.aspx" />
+    <Content Include="img\bg1-blurred.png" />
+    <Content Include="img\bg1.jpg" />
+    <Content Include="img\blue-gradient-background-contrastPlus.png" />
+    <Content Include="img\blue-gradient-background.png" />
+    <Content Include="img\book-icon-modded.png" />
+    <Content Include="img\book-icon.png" />
+    <Content Include="img\login-icon-border-x2.png" />
+    <Content Include="img\login-icon-border-x3.png" />
+    <Content Include="img\login-icon-border-x4.png" />
+    <Content Include="img\login-icon.png" />
+    <Content Include="img\student-icon-default.png" />
+    <Content Include="Inic.aspx" />
+    <Content Include="Inic_Register.aspx" />
+    <Content Include="js\morioh.js" />
+    <Content Include="js\three.r119.min.js" />
+    <Content Include="js\vanta.birds.min.js" />
+    <Content Include="PagarPedidos.aspx" />
+    <Content Include="RejeitPedido_Func.aspx" />
+    <Content Include="RejeitPedido_Prof.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebService.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aluno.cs" />
+    <Compile Include="AprovPedido_Func.aspx.cs">
+      <DependentUpon>AprovPedido_Func.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AprovPedido_Func.aspx.designer.cs">
+      <DependentUpon>AprovPedido_Func.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AprovPedido_Prof.aspx.cs">
+      <DependentUpon>AprovPedido_Prof.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AprovPedido_Prof.aspx.designer.cs">
+      <DependentUpon>AprovPedido_Prof.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AtriPrecoPedidos_Func.aspx.cs">
+      <DependentUpon>AtriPrecoPedidos_Func.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AtriPrecoPedidos_Func.aspx.designer.cs">
+      <DependentUpon>AtriPrecoPedidos_Func.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AvalPedidos_Prof.aspx.cs">
+      <DependentUpon>AvalPedidos_Prof.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AvalPedidos_Prof.aspx.designer.cs">
+      <DependentUpon>AvalPedidos_Prof.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Cancelar_PedidoFunc.aspx.cs">
+      <DependentUpon>Form_Cancelar_PedidoFunc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form_Cancelar_PedidoFunc.aspx.designer.cs">
+      <DependentUpon>Form_Cancelar_PedidoFunc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ConsultarAl.aspx.cs">
+      <DependentUpon>Form_ConsultarAl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form_ConsultarAl.aspx.designer.cs">
+      <DependentUpon>Form_ConsultarAl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ConsultarFunc.aspx.cs">
+      <DependentUpon>Form_ConsultarFunc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form_ConsultarFunc.aspx.designer.cs">
+      <DependentUpon>Form_ConsultarFunc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ConsultarProf.aspx.cs">
+      <DependentUpon>Form_ConsultarProf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form_ConsultarProf.aspx.designer.cs">
+      <DependentUpon>Form_ConsultarProf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Edit_Prof.aspx.cs">
+      <DependentUpon>Form_Edit_Prof.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form_Edit_Prof.aspx.designer.cs">
+      <DependentUpon>Form_Edit_Prof.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Func_Dashboard.aspx.cs">
+      <DependentUpon>Form_Func_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form_Func_Dashboard.aspx.designer.cs">
+      <DependentUpon>Form_Func_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Passar_Func.aspx.cs">
+      <DependentUpon>Form_Passar_Func.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form_Passar_Func.aspx.designer.cs">
+      <DependentUpon>Form_Passar_Func.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Passar_Prof.aspx.cs">
+      <DependentUpon>Form_Passar_Prof.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form_Passar_Prof.aspx.designer.cs">
+      <DependentUpon>Form_Passar_Prof.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Prof_Dashboard.aspx.cs">
+      <DependentUpon>Form_Prof_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form_Prof_Dashboard.aspx.designer.cs">
+      <DependentUpon>Form_Prof_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AL_Dashboard.aspx.cs">
+      <DependentUpon>Form_AL_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form_AL_Dashboard.aspx.designer.cs">
+      <DependentUpon>Form_AL_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Cancelar_PedidoAl.aspx.cs">
+      <DependentUpon>Form_Cancelar_PedidoAl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form_Cancelar_PedidoAl.aspx.designer.cs">
+      <DependentUpon>Form_Cancelar_PedidoAl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PedirAl.aspx.cs">
+      <DependentUpon>Form_PedirAl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form_PedirAl.aspx.designer.cs">
+      <DependentUpon>Form_PedirAl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inic.aspx.cs">
+      <DependentUpon>Inic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inic.aspx.designer.cs">
+      <DependentUpon>Inic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inic_Register.aspx.cs">
+      <DependentUpon>Inic_Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inic_Register.aspx.designer.cs">
+      <DependentUpon>Inic_Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo.cs" />
+    <Compile Include="PagarPedidos.aspx.cs">
+      <DependentUpon>PagarPedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagarPedidos.aspx.designer.cs">
+      <DependentUpon>PagarPedidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pedido.cs" />
+    <Compile Include="ProfStaff.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RejeitPedido_Func.aspx.cs">
+      <DependentUpon>RejeitPedido_Func.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RejeitPedido_Func.aspx.designer.cs">
+      <DependentUpon>RejeitPedido_Func.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RejeitPedido_Prof.aspx.cs">
+      <DependentUpon>RejeitPedido_Prof.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RejeitPedido_Prof.aspx.designer.cs">
+      <DependentUpon>RejeitPedido_Prof.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService.asmx.cs">
+      <DependentUpon>WebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\morioh.js.map" />
+    <Content Include="css\morioh.css.map" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62188</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44345/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

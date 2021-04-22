@@ -1,0 +1,40 @@
+--Inserir Aluno
+CREATE PROCEDURE InsertAl @AlunoID varchar(50), @Password varchar(max), @Nome varchar(150), 
+@DataNasc date, @Telefone varchar(20), @Morada varchar(150), @DataCria date, @Turma varchar(20), @Oculto bit
+AS
+Insert into Aluno values (@AlunoID, @Password, @Nome, @DataNasc, @Telefone, @Morada, @DataCria, @Turma, @Oculto)
+
+--Inserir ProfStaff
+CREATE PROCEDURE InsertProfStaff @ProfStaffID varchar(50), @Password varchar(max), @Nome varchar(150), 
+@DataNasc date, @Telefone varchar(20), @Morada varchar(150), @DataCria date, @Tipo varchar(50), @Oculto bit
+AS
+Insert into ProfStaff values (@ProfStaffID, @Password, @Nome, @DataNasc, @Telefone, @Morada, @DataCria, @Tipo, @Oculto)
+
+--Eliminar DiscProf
+create procedure delDiscProf @ProfStaffID varchar(50)
+as
+delete from DiscProf where ProfStaffID=@ProfStaffID
+
+--Inserir DiscProf
+CREATE PROCEDURE InsertDiscProf @Sigla varchar(50), @ProfStaffID varchar(50)
+AS
+Insert into DiscProf values (@Sigla, @ProfStaffID)
+
+--Inserir Pedido
+CREATE PROCEDURE InsertPedido @PedidoID int, @Aluno varchar(50), @Prof varchar(50), @Modulo int, @DataCria date, @HoraCria time(7), @DataExame date, @HoraExame time(7),
+@DurExame int, @DataAprov date, @HoraAprov time(7), @DataPago date, @HoraPago time(7), @DataTermin date, @HoraTermin time(7), @Estado varchar(50), @Preco money,
+@TipoPaga varchar(50), @TipoTaxa varchar(100), @Nota float
+AS
+Insert into Pedido values (@PedidoID, @Aluno, @Prof, @Modulo, @DataCria, @HoraCria, @DataExame, @HoraExame, @DurExame, @DataAprov, @HoraAprov, @DataPago, @HoraPago,
+@DataTermin, @HoraTermin, @Estado, @Preco, @TipoPaga, @TipoTaxa, @Nota)
+
+--Eliminar Pedido
+create procedure delPedido @PedidoID int
+as
+Delete from Pedido where PedidoID=@PedidoID
+
+--Inserir Modulo
+CREATE PROCEDURE InsertModulo @ModuloID int, @NumModulo int, @Sigla varchar(50)
+AS
+Insert into Modulo values (@ModuloID, @NumModulo, @Sigla)
+

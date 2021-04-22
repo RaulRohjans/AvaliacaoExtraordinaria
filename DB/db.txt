@@ -1,0 +1,12 @@
+Aluno - AlunoID (I180073) varchar(50) PK, Password varchar(max), Nome char(150), DataNasc date, Telefone varchar(20), Morada varchar(150), DataCria date, Turma varchar(20)
+
+ProfStaff - ProfStaffID (?) varchar(50) PK, Password varchar(max), Nome char(150), DataNasc date, Telefone varchar(20), Morada varchar(150), Sigla char(5) NULL, DataCria date, Tipo char(16)
+
+Pedido - PedidoID () int PK, Aluno varchar(50), Prof varchar(50), Modulo varchar(10), DataCria date, HoraCria time, DataExame date, HoraExame time, DurExame int, DataAprov date, HoraAprov time, DataPago date, HoraPago time, DataTermin date, HoraTermin time, Estado char(50), Preco money NULL, TipoPaga char(50) NULL, TipoTaxa char(100), Nota float
+
+Módulo - ModuloID int, NumModulo int, Sigla char(5)
+
+Disciplina - Sigla (PT) char(5) PK, Disciplina char(50), Componente char(50)
+
+DiscProf - Sigla char(5) PK, ProfStaffID varchar(50) PK
+
